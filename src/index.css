@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background: #010001;
+
+
+  /* background: aqua; */
+
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  list-style: none;
+}
+
+.logo {
+  background-image: url(/src/img/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16rem;
+  height: 36px;
+  position: absolute;
+  margin-top: 10px;
+  left: 4rem;
+}
+
+.navbar .toggle-icon {
+  display: none;
+}
+
+.card {
+  height: 80vh;
+}
+
+.container {
+  height: 79vh;
+  display: flex;
+  margin-top: 7rem;
+}
+
+.boxs {
+  height: 70vh;
+  width: 25rem;
+
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  background: #010001;
+
+}
+
+@media (max-width:576px) {
+  .navbar {
+      position: relative;
+      transition: 0.5s height ease-in-out;
+  }
+
+  .navbar.expanded {
+      height: 100vh;
+      overflow: hidden;
+  }
+
+  .navbar.expanded ul {
+      position: absolute;
+      top: 120px;
+      left: 0;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      left: 7rem;
+      overflow: hidden;
+
+  }
+
+  .navbar.expanded ul li {
+      margin: 15px 0;
+      font-size: 24px;
+  }
+
+  .navbar.expanded ul a {
+      margin: 15px 0;
+      font-size: 24px;
+  }
+
+  .navbar .logo {
+      position: absolute;
+  }
+
+  .navbar .toggle-icon {
+      color: #fff;
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+
+  .navbar ul {
+      display: none;
+  }
+
+  .card {
+      height: auto;
+  }
+
+
+  .container {
+      display: block;
+      height: auto;
+      margin-top: 0rem;
+
+  }
+
+  .boxs-img-top {
+      width: 100%;
+  }
+
+  .boxs {
+      width: 100%;
+      height: auto;
+
+  }
+}
